@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Boka Resa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="projekt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <script src="projekt.js"></script>
+    </head>
+    <body>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="pic/frdtjnst-high-resolution-logo-transparent.png" alt="logo" class="logo"></a>
+        <a href="booking.html">Boka Resa</a>
+        <a href="login.html">Logga In</a>
+        <a href="history.html">Mina Resor</a>
+        <a href="about.html">Om Färdtjänsten</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+<div class="flexcontainer">
+
+        <div class="form">
+            <p>Välkommen till formuläret där du kan boka en resa! Fyll i formuläret så återkoppla vi till dig så fort som möjligt! Vi önskar dig en trevlig resa!</p><br>
+            <form action="confirm.html">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="personnr">Personnummer:</label>
+                <input type="text" id="personnr" name="personnr"> <br>
+
+                <label for="telefonnr">Telefonnummer:</label>
+                <input type="text" id="telefonnr" name="telefonnr"> <br>
+
+                <label for="pickup">Från:</label>
+                <input type="text" id="pickup" name="pickup">
+
+                <label for="destination">Till:</label>
+                <input type="text" id="destination" name="destination"><br>
+        
+                <label for="date">Datum:</label>
+                <input type="text" id="date" name="date">
+
+                <label for="time">Vilken tid?</label>
+                <input type="text" id="time" name="time">
+
+                <label for="return">Returresa?</label>
+                <input type="checkbox" id="return" name="return">
+
+                <label for="returntime">Vilken tid?</label>
+                <input type="text" id="returntime" name="returntime"><br>
+
+                <label for="aid">Vilka hjälpmedel har du?</label>
+                <input type="text" id="aid" name="aid"><br>
+
+                <label for="recurring">Är resan återkommande?</label>
+                <input type="checkbox" id="recurring" name="recurring">
+
+                <label for="interval">Vilket intervall?</label>
+                <input type="text" id="interval" name="interval"><br>
+
+                <label for="moreinfo">Finns det något annars vi behöver veta?</label><br>
+                <input type="textarea" id="moreinfo" name="moreinfo"> <br>
+
+                <input type="submit" value="Boka Resa">
+        </form>
+    </div>
+
+</div>
+<div class="flexcontainer">
+    <footer>
+        <h3> Kontaktuppgifter</h3>
+        <ul>
+            <li>Telefon: 0325-123456</li>
+            <li>E-post: färdtjänst@svenljunga.se</li>
+            <li>Adress: Brogatan 16, 52345, Svenljunga</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

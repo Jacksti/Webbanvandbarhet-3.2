@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Kontakt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="projekt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <script src="projekt.js"></script>
+    </head>
+    <body>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="pic/frdtjnst-high-resolution-logo-transparent.png" alt="logo" class="logo"></a>
+        <a href="booking.html">Boka Resa</a>
+        <a href="login.html">Logga In</a>
+        <a href="history.html">Mina Resor</a>
+        <a href="about.html">Om Färdtjänsten</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+<div class="flexcontainer">
+    <section class="contact">
+        <h2>Kontaktuppgifter</h2>
+        <p>Adress: Brogatan 16, 52345, Svenljunga<br>
+            Telefon: 0325-123456<br>
+            E-post fardtjanst@svenljunga.se</p>
+    </section>
+
+    <section class="contactform">
+        <h2>Har du en fråga? Bara kontakta oss via formuläret vi återkommer så snart som möjligt</h2>
+        <form>
+            <label for="contactname">Namn:</label>
+            <input type="text" id="contactname" name="contactname"><br>
+
+            <label for="contacttel">Telefonnummer:</label>
+            <input type="text" id="contacttel" name="contacttel"><br>
+
+            <label for="contactmail">E-Post:</label>
+            <input type="text" id="contactmail" name="contactmail"><br>
+
+            <label for="contactquestion">Fråga:</label>
+            <input type="textarea" id="contactquestion" name="contactquestion"><br>
+
+            <input type="submit" value="Skicka">
+        </form>
+    </section>
+
+
+</div>
+
+<div class="flexcontainer">
+    <footer>
+        <h3> Kontaktuppgifter</h3>
+        <ul>
+            <li>Telefon: 0325-123456</li>
+            <li>E-post: fardtjanst@svenljunga.se</li>
+            <li>Adress: Brogatan 16, 52345, Svenljunga</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
