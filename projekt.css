@@ -16,7 +16,7 @@ h1 {
     justify-content: center;
   }
   
-  .topnav a {
+.topnav a {
     float: left;
     display: block;
     color: black;
@@ -26,22 +26,23 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .logo {
-    display:inline-block;
+.logo {
+    float: left;
+    position: relative;
     width: 10%;
     height: 10%;
   }
   
-  .topnav a.active {
+.topnav a.active {
     background-color: #04AA6D;
     color: white;
   }
   
-  .topnav .icon {
+.topnav .icon {
     display: none;
   }
 
-  .flexcontainer {
+.flexcontainer {
     margin-top: 5%;
     display: flex;
     flex-direction: row;
@@ -51,11 +52,11 @@ h1 {
     box-sizing: border-box;
   }
 
-  .homeimg {
+.homeimg {
     width: 100%;
   }
 
-  .link {
+.link {
     padding: 50px;
     margin: 10px;
     width: 50%;
@@ -68,45 +69,58 @@ h1 {
     border-style: solid;
   }
 
-  section {
+section {
     background-color: #DAECFE;
     width: 100%;
     text-align: center;
     padding-bottom: 5%;
   }
 
-  section h2 {
+section h2 {
     font-size: 2rem;
   }
 
-  section a {
+section a {
     text-decoration: none;
     color: blue;
     font-weight: bold;
     font-size: 2rem;
   }
 
-  section p{
+section p{
     font-size: 1.5rem;
   }
 
-  footer {
+footer {
     background-color: #DAECFE;
     width: 100%;
   }
 
-  footer li {
+footer li {
     display: block;
   }
 
 .form {
     background-color: #DAECFE;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
 }
 
+.bokningform input[type=submit] {
+  width: 25%;
+}
+
+.bokningform {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .form input[type=text]{
-  width: 20%;
+  width: 50%;
 }
 
 #moreinfo {
@@ -115,16 +129,16 @@ h1 {
     margin-bottom: 1%;
 }
 
-  label {
+label {
     font-size: 1rem;
   }
   
-  input[type=text] {
+input[type=text] {
     width: 15%;
     margin: 1%;
   }
 
-  input[type=submit] {
+input[type=submit] {
     background-color: #DAECFE;
     font-size: 1.5rem;
     border-style:solid;
@@ -132,37 +146,48 @@ h1 {
     cursor: pointer;
   }
 
-  table,th, td {
+th,td {
     border-style: solid;
   }
 
-  .contactform {
-    text-align: left;
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .contactform h2{
+.contactform h2{
     text-align: center;
   }
 
-  .contactform label {
-    margin-left: 10%;
-  }
 .contactform input[type=text] {
-    width: 30%;
+    width: 40%;
 }
 
 #contactquestion {
-    height: 50px;
+    width: 70%;
 }
 
-  .change {
+.change {
     font-size: 1em;
     color: blue;
   }
 
-  .bookedtable input[type=text] {
+.bookedtable input[type=text] {
     width: 90%;
   }
+
+textarea {
+    resize: none;
+  }
+.loginform {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -197,6 +222,20 @@ h1 {
       height: 30px;
     }
 
+    .bokningform input[type=submit] {
+      width: 30%;
+    }
+
+    .form p {
+      font-size: 1.5rem;
+    }
+
+    .loginform input[type=text] {
+      width: 50%;
+      font-size:1.5rem;
+      margin-bottom: 5%;
+    }
+
   }
   
   @media screen and (max-width: 600px) {
@@ -212,3 +251,9 @@ h1 {
       text-align: left;
     }
   }
+
+@media screen and (max-width: 960px) {
+  .topnav a {
+    font-size: 1.1rem;
+  }
+}

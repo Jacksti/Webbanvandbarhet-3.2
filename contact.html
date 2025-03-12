@@ -34,20 +34,20 @@
             E-post fardtjanst@svenljunga.se</p>
     </section>
 
-    <section class="contactform">
+    <section class="contactformcontainer">
         <h2>Har du en fråga? Bara kontakta oss via formuläret vi återkommer så snart som möjligt</h2>
-        <form>
+        <form class="contactform">
             <label for="contactname">Namn:</label>
-            <input type="text" id="contactname" name="contactname"><br>
+            <input type="text" id="contactname" name="contactname">
 
             <label for="contacttel">Telefonnummer:</label>
-            <input type="text" id="contacttel" name="contacttel"><br>
+            <input type="text" id="contacttel" name="contacttel">
 
             <label for="contactmail">E-Post:</label>
-            <input type="text" id="contactmail" name="contactmail"><br>
+            <input type="text" id="contactmail" name="contactmail">
 
             <label for="contactquestion">Fråga:</label>
-            <input type="textarea" id="contactquestion" name="contactquestion"><br>
+            <textarea id="contactquestion" name="contactquestion" rows="4" cols="50"></textarea>
 
             <input type="submit" value="Skicka">
         </form>

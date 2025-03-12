@@ -30,21 +30,21 @@
 
         <div class="form">
             <p>Välkommen till formuläret där du kan boka en resa! Fyll i formuläret så återkoppla vi till dig så fort som möjligt! Vi önskar dig en trevlig resa!</p><br>
-            <form action="confirm.html">
+            <form class="bokningform" action="confirm.html">
                 <label for="name">Namn:</label>
                 <input type="text" id="name" name="name">
 
                 <label for="personnr">Personnummer:</label>
-                <input type="text" id="personnr" name="personnr"> <br>
+                <input type="text" id="personnr" name="personnr">
 
                 <label for="telefonnr">Telefonnummer:</label>
-                <input type="text" id="telefonnr" name="telefonnr"> <br>
+                <input type="text" id="telefonnr" name="telefonnr"> 
 
                 <label for="pickup">Från:</label>
                 <input type="text" id="pickup" name="pickup">
 
                 <label for="destination">Till:</label>
-                <input type="text" id="destination" name="destination"><br>
+                <input type="text" id="destination" name="destination">
         
                 <label for="date">Datum:</label>
                 <input type="text" id="date" name="date">
@@ -56,19 +56,19 @@
                 <input type="checkbox" id="return" name="return">
 
                 <label for="returntime">Vilken tid?</label>
-                <input type="text" id="returntime" name="returntime"><br>
+                <input type="text" id="returntime" name="returntime">
 
                 <label for="aid">Vilka hjälpmedel har du?</label>
-                <input type="text" id="aid" name="aid"><br>
+                <input type="text" id="aid" name="aid">
 
                 <label for="recurring">Är resan återkommande?</label>
                 <input type="checkbox" id="recurring" name="recurring">
 
                 <label for="interval">Vilket intervall?</label>
-                <input type="text" id="interval" name="interval"><br>
+                <input type="text" id="interval" name="interval">
 
-                <label for="moreinfo">Finns det något annars vi behöver veta?</label><br>
-                <input type="textarea" id="moreinfo" name="moreinfo"> <br>
+                <label for="moreinfo">Finns det något annars vi behöver veta?</label>
+                <textarea id="moreinfo" name="moreinfo" rows="4" cols="50"></textarea>
 
                 <input type="submit" value="Boka Resa">
         </form>
